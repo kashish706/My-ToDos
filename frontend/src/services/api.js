@@ -1,9 +1,6 @@
-// src/services/api.js
-// Centralized Axios service for all Todo API calls
-
 import axios from 'axios'
 
-const BASE_URL = '/api/todos'
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://taskflow-backend-dio0.onrender.com/api/todos'
 
 const api = axios.create({
   baseURL: BASE_URL,
