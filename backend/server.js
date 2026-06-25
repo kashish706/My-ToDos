@@ -1,6 +1,4 @@
 // server.js
-// Main Express server entry point
-
 const express = require("express");
 const cors = require("cors");
 const todoRoutes = require("./routes/todoRoutes");
@@ -10,7 +8,23 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // --- Middleware ---
-app.use(cors({ origin: "http://localhost:5173" })); // Allow Vite dev server
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (
+        !origin ||
+        /^http:\/\/localhost(:\d+)?$/.test(origin) ||
+        /\.vercel\.app$/.test(origin)
+      ) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
