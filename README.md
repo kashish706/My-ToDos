@@ -88,8 +88,7 @@ npm install
 ```bash
 cd backend
 npm run dev       # uses nodemon (auto-restart on change)
-# OR
-npm start         # plain node
+
 ```
 
 Backend runs at: **http://localhost:5000**
