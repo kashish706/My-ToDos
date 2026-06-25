@@ -1,0 +1,118 @@
+/* src/pages/TodoDetailsPage.css */
+
+.details-page {
+  max-width: 700px;
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  padding-left: 0;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.details-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+}
+
+.details-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.badge-overdue {
+  background: var(--red-soft);
+  color: var(--red);
+}
+
+.details-title {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.details-title.strikethrough {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.details-section { margin-bottom: 16px; }
+
+.details-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.details-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.no-desc { color: var(--text-muted); font-style: italic; }
+
+.details-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 32px;
+  margin: 4px 0;
+}
+
+.meta-block { display: flex; flex-direction: column; gap: 4px; }
+
+.meta-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.overdue-val { color: var(--red); }
+
+.priority-val-high   { color: var(--priority-high); }
+.priority-val-medium { color: var(--priority-medium); }
+.priority-val-low    { color: var(--priority-low); }
+
+.details-section-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.details-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.todo-id-tag {
+  margin-top: 12px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+@media (max-width: 480px) {
+  .details-card { padding: 20px; }
+  .details-title { font-size: 1.3rem; }
+  .details-meta-grid { grid-template-columns: 1fr; gap: 16px; }
+  .details-actions { flex-direction: column; }
+  .details-actions .btn { width: 100%; justify-content: center; }
+}

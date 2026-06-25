@@ -1,0 +1,47 @@
+[
+  {
+    "id": "5c25caf8-6c3d-409e-ae75-c55019e9175e",
+    "title": "Attend Online Webinar",
+    "description": "Join a technology webinar and take notes.",
+    "priority": "High",
+    "status": "Pending",
+    "dueDate": "2026-06-27",
+    "createdAt": "2026-06-25T04:05:35.331Z"
+  },
+  {
+    "id": "b47ef34a-66c3-4dd0-b27d-96346568710f",
+    "title": "Revise Operating System Concepts",
+    "description": "Study processes, threads, scheduling, and memory management.",
+    "priority": "High",
+    "status": "Pending",
+    "dueDate": "2026-06-26",
+    "createdAt": "2026-06-24T15:28:54.125Z"
+  },
+  {
+    "id": "aa773985-02cb-4e8c-9871-202bbb581d76",
+    "title": "Deploy MERN Project",
+    "description": "Deploy the application using AWS services and test all features.",
+    "priority": "Medium",
+    "status": "Pending",
+    "dueDate": "2026-06-27",
+    "createdAt": "2026-06-24T15:27:31.799Z"
+  },
+  {
+    "id": "5f2a0097-576d-4991-b37d-9779f0f36c41",
+    "title": "Update Resume",
+    "description": "Add recent projects, skills, and internship experience to the resume.",
+    "priority": "Medium",
+    "status": "Completed",
+    "dueDate": "2026-06-25",
+    "createdAt": "2026-06-24T15:26:35.362Z"
+  },
+  {
+    "id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+    "title": "Create React frontend",
+    "description": "Build the UI with React Router for navigation, including the list page and detail page with full CRUD support.",
+    "priority": "Medium",
+    "status": "Pending",
+    "dueDate": "2026-06-25",
+    "createdAt": "2025-05-31T08:30:00.000Z"
+  }
+]
